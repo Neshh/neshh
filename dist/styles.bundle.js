@@ -1,5 +1,12 @@
 webpackJsonp([2],{
 
+/***/ "../../../../../src/assets/logo.svg":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "logo.4610ccfe47be83b82e42.svg";
+
+/***/ }),
+
 /***/ "../../../../../src/styles.sass":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -35,7 +42,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "body {\n  padding: 0;\n  margin: 0; }\n\n.inline {\n  display: inline-block;\n  vertical-align: middle; }\n", ""]);
+exports.push([module.i, "body {\n  padding: 0;\n  margin: 0;\n  font-family: \"Roboto\"; }\n\nheader {\n  position: absolute;\n  top: 0;\n  left: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  padding: 0 80px;\n  width: 100vw;\n  height: 80px; }\n  header .logo {\n    margin: 15px 0 0 0;\n    width: 50px;\n    height: 50px;\n    background-image: url(" + __webpack_require__("../../../../../src/assets/logo.svg") + ");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center center; }\n  header .buttons-container {\n    margin: 25px 0 0 0; }\n    header .buttons-container .button {\n      padding: 15px 25px;\n      color: #ed495e;\n      font-size: 16px;\n      border-radius: 5px; }\n\n.inline {\n  display: inline-block;\n  vertical-align: middle; }\n\n* {\n  /* Safari/Chrome, other WebKit */\n  /* Firefox, other Gecko */\n  box-sizing: border-box; }\n", ""]);
 
 // exports
 

@@ -1,3 +1,44 @@
 <div class="landing">
-	<app-header></app-header>
+	<div class="landing-container">
+		<div class="contest-container inline">
+			<div class="card-box">
+				<h2 class="label">Hot contest right now</h2>
+				<div class="card"></div>
+			</div>
+		</div>
+		<div class="form-container inline">
+			<h1 class="form-container__headname">Neshh</h1>
+		</div>
+	</div>
+	<div class="landing__waves">
+		<svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+			<defs>
+				<path id="gentle-wave"
+				d="M-160 44c30 0 
+				58-18 88-18s
+				58 18 88 18 
+				58-18 88-18 
+				58 18 88 18
+				v44h-352z" />
+				<linearGradient id="violet" x1="0%" y1="0%" x2="100%" y2="0%">
+				  <stop offset="0%" style="stop-color:#a71f75" />
+				  <stop offset="100%" style="stop-color:#e81b8e" />
+				</linearGradient>
+				<linearGradient id="red" x1="0%" y1="0%" x2="100%" y2="0%">
+				  <stop offset="0%" style="stop-color:#e03a6b" />
+				  <stop offset="100%" style="stop-color:#ff5e4e" />
+				</linearGradient>
+				<linearGradient id="blue">
+				  <stop offset="0%" style="stop-color:#0a7dd7" />
+				  <stop offset="100%" style="stop-color:#5ecbc9" />
+				  <stop offset="0%" style="stop-color:#0a7dd7" />
+				</linearGradient>
+			</defs>
+			<g class="parallax">
+				<use xlink:href="#gentle-wave" x="50" y="0" fill="url(#violet)"/>
+				<use xlink:href="#gentle-wave" x="50" y="4" fill="url(#red)"/>
+				<use xlink:href="#gentle-wave" x="50" y="8" fill="url(#blue)"/>
+			</g>
+		</svg>
+	</div>
 </div>

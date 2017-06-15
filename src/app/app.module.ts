@@ -6,8 +6,6 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
-import { HeaderComponent } from './structure/header/header.component';
-import { FooterComponent } from './structure/footer/footer.component';
 import { SidebarComponent } from './structure/sidebar/sidebar.component';
 
 const ROUTES = [
@@ -21,8 +19,6 @@ const ROUTES = [
   declarations: [
     AppComponent,
     LandingComponent,
-    HeaderComponent,
-    FooterComponent,
     SidebarComponent
   ],
   imports: [

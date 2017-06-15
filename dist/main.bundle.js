@@ -16,7 +16,7 @@ webpackEmptyContext.id = "../../../../../src async recursive";
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<router-outlet></router-outlet>\n"
+module.exports = "<router-outlet></router-outlet>"
 
 /***/ }),
 
@@ -83,9 +83,7 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__("../../../router/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__landing_landing_component__ = __webpack_require__("../../../../../src/app/landing/landing.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__structure_header_header_component__ = __webpack_require__("../../../../../src/app/structure/header/header.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__structure_footer_footer_component__ = __webpack_require__("../../../../../src/app/structure/footer/footer.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__structure_sidebar_sidebar_component__ = __webpack_require__("../../../../../src/app/structure/sidebar/sidebar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__structure_sidebar_sidebar_component__ = __webpack_require__("../../../../../src/app/structure/sidebar/sidebar.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -96,8 +94,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
-
 
 
 
@@ -120,9 +116,7 @@ var AppModule = (function () {
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_6__landing_landing_component__["a" /* LandingComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__structure_header_header_component__["a" /* HeaderComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__structure_footer_footer_component__["a" /* FooterComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__structure_sidebar_sidebar_component__["a" /* SidebarComponent */]
+                __WEBPACK_IMPORTED_MODULE_7__structure_sidebar_sidebar_component__["a" /* SidebarComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -144,7 +138,7 @@ var AppModule = (function () {
 /***/ "../../../../../src/app/landing/landing.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"landing\">\n\t<app-header></app-header>\n</div>\n"
+module.exports = "<div class=\"landing\">\n\t<div class=\"landing-container\">\n\t\t<div class=\"contest-container inline\">\n\t\t\t<div class=\"card-box\">\n\t\t\t\t<h2 class=\"label\">Hot contest right now</h2>\n\t\t\t\t<div class=\"card\"></div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"form-container inline\">\n\t\t\t<h1 class=\"form-container__headname\">Neshh</h1>\n\t\t</div>\n\t</div>\n\t<div class=\"landing__waves\">\n\t\t<svg class=\"editorial\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 24 150 28\" preserveAspectRatio=\"none\">\n\t\t\t<defs>\n\t\t\t\t<path id=\"gentle-wave\"\n\t\t\t\td=\"M-160 44c30 0 \n\t\t\t\t58-18 88-18s\n\t\t\t\t58 18 88 18 \n\t\t\t\t58-18 88-18 \n\t\t\t\t58 18 88 18\n\t\t\t\tv44h-352z\" />\n\t\t\t\t<linearGradient id=\"violet\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n\t\t\t\t  <stop offset=\"0%\" style=\"stop-color:#a71f75\" />\n\t\t\t\t  <stop offset=\"100%\" style=\"stop-color:#e81b8e\" />\n\t\t\t\t</linearGradient>\n\t\t\t\t<linearGradient id=\"red\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n\t\t\t\t  <stop offset=\"0%\" style=\"stop-color:#e03a6b\" />\n\t\t\t\t  <stop offset=\"100%\" style=\"stop-color:#ff5e4e\" />\n\t\t\t\t</linearGradient>\n\t\t\t\t<linearGradient id=\"blue\">\n\t\t\t\t  <stop offset=\"0%\" style=\"stop-color:#0a7dd7\" />\n\t\t\t\t  <stop offset=\"100%\" style=\"stop-color:#5ecbc9\" />\n\t\t\t\t  <stop offset=\"0%\" style=\"stop-color:#0a7dd7\" />\n\t\t\t\t</linearGradient>\n\t\t\t</defs>\n\t\t\t<g class=\"parallax\">\n\t\t\t\t<use xlink:href=\"#gentle-wave\" x=\"50\" y=\"0\" fill=\"url(#violet)\"/>\n\t\t\t\t<use xlink:href=\"#gentle-wave\" x=\"50\" y=\"4\" fill=\"url(#red)\"/>\n\t\t\t\t<use xlink:href=\"#gentle-wave\" x=\"50\" y=\"8\" fill=\"url(#blue)\"/>\n\t\t\t</g>\n\t\t</svg>\n\t</div>\n</div>"
 
 /***/ }),
 
@@ -156,7 +150,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".landing {\n  width: 100vw; }\n", ""]);
+exports.push([module.i, ".landing {\n  position: relative;\n  height: 100vh;\n  width: 100vw; }\n  .landing .landing-container {\n    width: 960px;\n    height: 100%;\n    display: block;\n    margin: 0 auto; }\n    .landing .landing-container .contest-container {\n      position: relative;\n      z-index: 10;\n      height: 100%;\n      width: 49.5%; }\n      .landing .landing-container .contest-container .card-box {\n        position: relative;\n        top: 50vh;\n        -webkit-transform: translateY(-50%);\n                transform: translateY(-50%); }\n        .landing .landing-container .contest-container .card-box .label {\n          color: #ed495e;\n          font-size: 14px;\n          font-weight: 500;\n          margin-bottom: 20px; }\n        .landing .landing-container .contest-container .card-box .card {\n          width: 360px;\n          height: 320px;\n          background-color: white;\n          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }\n    .landing .landing-container .form-container {\n      position: relative;\n      z-index: 10;\n      height: 100%;\n      width: 49.5%; }\n      .landing .landing-container .form-container .form-container__headname {\n        font-size: 42px;\n        margin-bottom: 40px;\n        text-align: center; }\n  .landing .landing__waves {\n    position: absolute;\n    z-index: 2;\n    bottom: 0;\n    width: 100%;\n    height: 50%; }\n    .landing .landing__waves .parallax > use {\n      -webkit-animation: move-forever 58s linear infinite;\n              animation: move-forever 58s linear infinite; }\n      .landing .landing__waves .parallax > use:nth-child(1) {\n        -webkit-animation-delay: -2s;\n                animation-delay: -2s;\n        background: linear-gradient(156deg, #a71f75, #e81b8e); }\n      .landing .landing__waves .parallax > use:nth-child(2) {\n        -webkit-animation-delay: -2s;\n                animation-delay: -2s;\n        -webkit-animation-duration: 38s;\n                animation-duration: 38s; }\n      .landing .landing__waves .parallax > use:nth-child(3) {\n        -webkit-animation-delay: -4s;\n                animation-delay: -4s;\n        -webkit-animation-duration: 25s;\n                animation-duration: 25s; }\n\n@-webkit-keyframes move-forever {\n  0% {\n    -webkit-transform: translate(-90px, 0%);\n            transform: translate(-90px, 0%); }\n  50% {\n    -webkit-transform: translate(85px, 0%);\n            transform: translate(85px, 0%); }\n  100% {\n    -webkit-transform: translate(-90px, 0%);\n            transform: translate(-90px, 0%); } }\n\n@keyframes move-forever {\n  0% {\n    -webkit-transform: translate(-90px, 0%);\n            transform: translate(-90px, 0%); }\n  50% {\n    -webkit-transform: translate(85px, 0%);\n            transform: translate(85px, 0%); }\n  100% {\n    -webkit-transform: translate(-90px, 0%);\n            transform: translate(-90px, 0%); } }\n    .landing .landing__waves .editorial {\n      display: block;\n      width: 100%;\n      height: 100%;\n      max-height: 100vh;\n      margin: 0; }\n", ""]);
 
 // exports
 
@@ -198,126 +192,6 @@ var LandingComponent = (function () {
     return LandingComponent;
 }());
 //# sourceMappingURL=/Users/antonmartyniuk/neshh/src/landing.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/structure/footer/footer.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  footer works!\n</p>\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/structure/footer/footer.component.sass":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/structure/footer/footer.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FooterComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var FooterComponent = (function () {
-    function FooterComponent() {
-    }
-    FooterComponent.prototype.ngOnInit = function () {
-    };
-    FooterComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
-            selector: 'app-footer',
-            template: __webpack_require__("../../../../../src/app/structure/footer/footer.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/structure/footer/footer.component.sass")]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], FooterComponent);
-    return FooterComponent;
-}());
-//# sourceMappingURL=/Users/antonmartyniuk/neshh/src/footer.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/structure/header/header.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"logo inline\"></div>\n<div class=\"buttons-container inline\">\n\t<a class=\"button\">Sign up</a>\n</div>"
-
-/***/ }),
-
-/***/ "../../../../../src/app/structure/header/header.component.sass":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, ":host {\n  width: 100vw;\n  height: 60px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between; }\n  :host .logo {\n    width: 45px;\n    height: 45px;\n    background-color: blue; }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/structure/header/header.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HeaderComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var HeaderComponent = (function () {
-    function HeaderComponent() {
-    }
-    HeaderComponent.prototype.ngOnInit = function () {
-    };
-    HeaderComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
-            selector: 'app-header',
-            template: __webpack_require__("../../../../../src/app/structure/header/header.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/structure/header/header.component.sass")]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], HeaderComponent);
-    return HeaderComponent;
-}());
-//# sourceMappingURL=/Users/antonmartyniuk/neshh/src/header.component.js.map
 
 /***/ }),
 

@@ -7,6 +7,10 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { SidebarComponent } from './structure/sidebar/sidebar.component';
+import { RegisterComponent } from './forms/register/register.component';
+import { LoginComponent } from './forms/login/login.component';
+import { TabsComponent } from './layout/tabs/tabs.component';
+import { TabComponent } from './layout/tabs/tab/tab.component';
 
 const ROUTES = [
   {
@@ -19,7 +23,11 @@ const ROUTES = [
   declarations: [
     AppComponent,
     LandingComponent,
-    SidebarComponent
+    SidebarComponent,
+    RegisterComponent,
+    LoginComponent,
+    TabsComponent,
+    TabComponent
   ],
   imports: [
     BrowserModule,

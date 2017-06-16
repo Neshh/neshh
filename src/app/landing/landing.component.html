@@ -1,13 +1,39 @@
 <div class="landing">
+	<header>
+		<div class="logo inline"></div>
+		<div class="buttons-container inline">
+			<a class="button">Help</a>
+		</div>
+	</header>
 	<div class="landing-container">
 		<div class="contest-container inline">
 			<div class="card-box">
-				<h2 class="label">Hot contest right now</h2>
+				<h2 class="label">Hot contests right now</h2>
+				<div class="card"></div>
 				<div class="card"></div>
 			</div>
 		</div>
 		<div class="form-container inline">
-			<h1 class="form-container__headname">Neshh</h1>
+			<div class="container__box">
+				<h1 class="form-container__headname">Neshh</h1>
+				<h2 class="form-container__subname">Laborum coniunctione est vidisse, occaecat comprehenderit qui pariatur</h2>
+				<app-tabs>
+					<app-tab [tabTitle]="'Sign up'">
+						<app-register></app-register>
+					</app-tab>
+					<app-tab tabTitle="Log in">
+						<app-login></app-login>
+					</app-tab>
+				</app-tabs>
+				<footer>
+					<span class="copy inline">© Neshh</span>
+					<div class="links-container inline">
+						<a class="facebook" href="facebook" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+						<a class="instagram" href="" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						<a class="vk" href="https://vk.com/neshhcom" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
+					</div>
+				</footer>
+			</div>
 		</div>
 	</div>
 	<div class="landing__waves">

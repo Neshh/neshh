@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
 
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
@@ -12,6 +13,7 @@ import { LoginComponent } from './forms/login/login.component';
 import { TabsComponent } from './layout/tabs/tabs.component';
 import { TabComponent } from './layout/tabs/tab/tab.component';
 import { CardComponent } from './structure/card/card.component';
+import { PopupComponent } from './layout/popup/popup.component';
 
 const ROUTES = [
   {
@@ -29,7 +31,8 @@ const ROUTES = [
     LoginComponent,
     TabsComponent,
     TabComponent,
-    CardComponent
+    CardComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,

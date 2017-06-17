@@ -88,8 +88,7 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__forms_login_login_component__ = __webpack_require__("../../../../../src/app/forms/login/login.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__layout_tabs_tabs_component__ = __webpack_require__("../../../../../src/app/layout/tabs/tabs.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__layout_tabs_tab_tab_component__ = __webpack_require__("../../../../../src/app/layout/tabs/tab/tab.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__structure_card_card_component__ = __webpack_require__("../../../../../src/app/structure/card/card.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__layout_popup_popup_component__ = __webpack_require__("../../../../../src/app/layout/popup/popup.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__layout_popup_popup_component__ = __webpack_require__("../../../../../src/app/layout/popup/popup.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -100,7 +99,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-
 
 
 
@@ -133,8 +131,9 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_9__forms_login_login_component__["a" /* LoginComponent */],
                 __WEBPACK_IMPORTED_MODULE_10__layout_tabs_tabs_component__["a" /* TabsComponent */],
                 __WEBPACK_IMPORTED_MODULE_11__layout_tabs_tab_tab_component__["a" /* TabComponent */],
-                __WEBPACK_IMPORTED_MODULE_12__structure_card_card_component__["a" /* CardComponent */],
-                __WEBPACK_IMPORTED_MODULE_13__layout_popup_popup_component__["a" /* PopupComponent */]
+                __WEBPACK_IMPORTED_MODULE_11__layout_tabs_tab_tab_component__["a" /* TabComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__layout_popup_popup_component__["a" /* PopupComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__layout_popup_popup_component__["a" /* PopupComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -216,7 +215,7 @@ var LoginComponent = (function () {
 /***/ "../../../../../src/app/forms/register/register.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<form>\n\t<button class=\"control-button facebook\"><i class=\"fa fa-facebook-square\" aria-hidden=\"true\"></i>&nbsp;&nbsp;Log in with Facebook </button>\n\t<div class=\"seperator\">\n\t\t<div class=\"line inline\"></div>\n\t\t<span class=\"or\">OR</span>\n\t\t<div class=\"line inline\"></div>\n\t</div>\n\t<input class=\"form-input email\" placeholder=\"Email\" type=\"email\">\n\t<input class=\"form-input name\" placeholder=\"Full Name\" type=\"text\">\n\t<input class=\"form-input password\" placeholder=\"Password\" type=\"password\">\n\t<input class=\"form-input re-password\" placeholder=\"Re-enter Password\" type=\"password\">\n\t<button class=\"control-button signup\">Sign up</button>\n\t<p class=\"terms\">By signing up, you agree to our Terms & Privacy Policy.</p>\n</form>"
+module.exports = "<form>\n\t<button class=\"control-button facebook\"><i class=\"fa fa-facebook-square\" aria-hidden=\"true\"></i>&nbsp;&nbsp;Log in with Facebook </button>\n\t<div class=\"seperator\">\n\t\t<div class=\"line inline\"></div>\n\t\t<span class=\"or\">OR</span>\n\t\t<div class=\"line inline\"></div>\n\t</div>\n\t<input class=\"form-input email\" placeholder=\"Email\" type=\"email\">\n\t<input class=\"form-input name\" placeholder=\"Full Name\" type=\"text\">\n\t<input class=\"form-input password\" placeholder=\"Password\" type=\"password\">\n\t<input class=\"form-input re-password\" placeholder=\"Re-enter Password\" type=\"password\">\n\t<button class=\"control-button signup\" (click)=\"openPop()\">Sign up</button>\n\t<p class=\"terms\">By signing up, you agree to our Terms & Privacy Policy.</p>\n</form>"
 
 /***/ }),
 
@@ -276,7 +275,7 @@ var RegisterComponent = (function () {
 /***/ "../../../../../src/app/landing/landing.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"landing\">\n\t<div class=\"landing-container\">\n\t\t<div class=\"contest-container inline\">\n\t\t\t<div class=\"phone-container\">\n\t\t\t\t<div class=\"card-container\">\n\t\t\t\t\t<card></card>\n\t\t\t\t\t<card></card>\n\t\t\t\t</div>\n\t\t\t\t<img class=\"box-iphone\" src=\"../../assets/landing-iphone.png\">\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"form-container inline\">\n\t\t\t<div class=\"container__box\">\n\t\t\t\t<div class=\"box__headname\">\n\t\t\t\t\t<div class=\"logo inline\"></div>\n\t\t\t\t\t<h1 class=\"name inline\">Neshh</h1>\n\t\t\t\t</div>\n\t\t\t\t<h2 class=\"box__subname\">Laborum coniunctione est vidisse, occaecat comprehenderit qui pariatur</h2>\n\t\t\t\t<tabs>\n\t\t\t\t\t<tab [tabTitle]=\"'Sign up'\">\n\t\t\t\t\t\t<register></register>\n\t\t\t\t\t</tab>\n\t\t\t\t\t<tab tabTitle=\"Log in\">\n\t\t\t\t\t\t<login></login>\n\t\t\t\t\t</tab>\n\t\t\t\t</tabs>\n\t\t\t\t<footer>\n\t\t\t\t\t<span class=\"copy inline\">© Neshh</span>\n\t\t\t\t\t<div class=\"links-container inline\">\n\t\t\t\t\t\t<a class=\"facebook\" href=\"facebook\" target=\"_blank\"><i class=\"fa fa-facebook-square\" aria-hidden=\"true\"></i></a>\n\t\t\t\t\t\t<a class=\"instagram\" href=\"\" target=\"_blank\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a>\n\t\t\t\t\t\t<a class=\"vk\" href=\"https://vk.com/neshhcom\" target=\"_blank\"><i class=\"fa fa-vk\" aria-hidden=\"true\"></i></a>\n\t\t\t\t\t</div>\n\t\t\t\t</footer>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div class=\"landing__waves\">\n\t\t<svg class=\"editorial\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 24 150 28\" preserveAspectRatio=\"none\">\n\t\t\t<defs>\n\t\t\t\t<path id=\"gentle-wave\"\n\t\t\t\td=\"M-160 44c30 0\n\t\t\t\t58-18 88-18s\n\t\t\t\t58 18 88 18\n\t\t\t\t58-18 88-18\n\t\t\t\t58 18 88 18\n\t\t\t\tv44h-352z\" />\n\t\t\t\t<linearGradient id=\"violet\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n\t\t\t\t  <stop offset=\"0%\" style=\"stop-color:#a71f75\" />\n\t\t\t\t  <stop offset=\"100%\" style=\"stop-color:#e81b8e\" />\n\t\t\t\t</linearGradient>\n\t\t\t\t<linearGradient id=\"red\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n\t\t\t\t  <stop offset=\"0%\" style=\"stop-color:#e03a6b\" />\n\t\t\t\t  <stop offset=\"100%\" style=\"stop-color:#ff5e4e\" />\n\t\t\t\t</linearGradient>\n\t\t\t\t<linearGradient id=\"blue\">\n\t\t\t\t  <stop offset=\"0%\" style=\"stop-color:#0a7dd7\" />\n\t\t\t\t  <stop offset=\"100%\" style=\"stop-color:#5ecbc9\" />\n\t\t\t\t  <stop offset=\"0%\" style=\"stop-color:#0a7dd7\" />\n\t\t\t\t</linearGradient>\n\t\t\t</defs>\n\t\t\t<g class=\"parallax\">\n\t\t\t\t<use xlink:href=\"#gentle-wave\" x=\"50\" y=\"0\" fill=\"url(#violet)\"/>\n\t\t\t\t<use xlink:href=\"#gentle-wave\" x=\"50\" y=\"4\" fill=\"url(#red)\"/>\n\t\t\t\t<use xlink:href=\"#gentle-wave\" x=\"50\" y=\"8\" fill=\"url(#blue)\"/>\n\t\t\t</g>\n\t\t</svg>\n\t</div>\n</div>\n"
+module.exports = "<div class=\"landing\">\n\t<popup [pop-open]=\"open\" *ngIf=\"this.open == true\" (click)=\"open = false\">\n\t\t<app-login></app-login>\n\t</popup>\n\t<div class=\"landing-container\">\n\t\t<div class=\"contest-container inline\">\n\t\t\t<div class=\"phone-container\">\n\t\t\t\t<div class=\"card-container\">\n\t\t\t\t\t<card></card>\n\t\t\t\t\t<card></card>\n\t\t\t\t</div>\n\t\t\t\t<img class=\"box-iphone\" src=\"../../assets/landing-iphone.png\">\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"form-container inline\">\n\t\t\t<div class=\"container__box\">\n\t\t\t\t<div class=\"box__headname\">\n\t\t\t\t\t<div class=\"logo inline\"></div>\n\t\t\t\t\t<h1 class=\"name inline\">Neshh</h1>\n\t\t\t\t</div>\n\t\t\t\t<h2 class=\"box__subname\">Laborum coniunctione est vidisse, occaecat comprehenderit qui pariatur</h2>\n\t\t\t\t<tabs>\n\t\t\t\t\t<tab [tabTitle]=\"'Sign up'\">\n\t\t\t\t\t\t<register></register>\n\t\t\t\t\t</tab>\n\t\t\t\t\t<tab tabTitle=\"Log in\">\n\t\t\t\t\t\t<login></login>\n\t\t\t\t\t</tab>\n\t\t\t\t</tabs>\n\t\t\t\t<footer>\n\t\t\t\t\t<span class=\"copy inline\">© Neshh</span>\n\t\t\t\t\t<div class=\"links-container inline\">\n\t\t\t\t\t\t<a class=\"facebook\" href=\"facebook\" target=\"_blank\"><i class=\"fa fa-facebook-square\" aria-hidden=\"true\"></i></a>\n\t\t\t\t\t\t<a class=\"instagram\" href=\"\" target=\"_blank\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a>\n\t\t\t\t\t\t<a class=\"vk\" href=\"https://vk.com/neshhcom\" target=\"_blank\"><i class=\"fa fa-vk\" aria-hidden=\"true\"></i></a>\n\t\t\t\t\t</div>\n\t\t\t\t</footer>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div class=\"landing__waves\">\n\t\t<svg class=\"editorial\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 24 150 28\" preserveAspectRatio=\"none\">\n\t\t\t<defs>\n\t\t\t\t<path id=\"gentle-wave\"\n\t\t\t\td=\"M-160 44c30 0\n\t\t\t\t58-18 88-18s\n\t\t\t\t58 18 88 18\n\t\t\t\t58-18 88-18\n\t\t\t\t58 18 88 18\n\t\t\t\tv44h-352z\" />\n\t\t\t\t<linearGradient id=\"violet\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n\t\t\t\t  <stop offset=\"0%\" style=\"stop-color:#a71f75\" />\n\t\t\t\t  <stop offset=\"100%\" style=\"stop-color:#e81b8e\" />\n\t\t\t\t</linearGradient>\n\t\t\t\t<linearGradient id=\"red\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n\t\t\t\t  <stop offset=\"0%\" style=\"stop-color:#e03a6b\" />\n\t\t\t\t  <stop offset=\"100%\" style=\"stop-color:#ff5e4e\" />\n\t\t\t\t</linearGradient>\n\t\t\t\t<linearGradient id=\"blue\">\n\t\t\t\t  <stop offset=\"0%\" style=\"stop-color:#0a7dd7\" />\n\t\t\t\t  <stop offset=\"100%\" style=\"stop-color:#5ecbc9\" />\n\t\t\t\t  <stop offset=\"0%\" style=\"stop-color:#0a7dd7\" />\n\t\t\t\t</linearGradient>\n\t\t\t</defs>\n\t\t\t<g class=\"parallax\">\n\t\t\t\t<use xlink:href=\"#gentle-wave\" x=\"50\" y=\"0\" fill=\"url(#violet)\"/>\n\t\t\t\t<use xlink:href=\"#gentle-wave\" x=\"50\" y=\"4\" fill=\"url(#red)\"/>\n\t\t\t\t<use xlink:href=\"#gentle-wave\" x=\"50\" y=\"8\" fill=\"url(#blue)\"/>\n\t\t\t</g>\n\t\t</svg>\n\t</div>\n</div>\n"
 
 /***/ }),
 
@@ -538,66 +537,6 @@ var TabsComponent = (function () {
     var _a;
 }());
 //# sourceMappingURL=/Users/antonmartyniuk/neshh/src/tabs.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/structure/card/card.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"card landing\">\n\t<img class=\"card__image\" src=\"../../../assets/example.jpg\">\n\t<div class=\"card__info inline\">\n\t\t<h2 class=\"info__name\">Apple AirPords</h2>\n\t\t<p class=\"info__date\">03.06.2017</p>\n\t</div>\n\t<div class=\"card__budjet inline\">\n\t</div>\n</div>"
-
-/***/ }),
-
-/***/ "../../../../../src/app/structure/card/card.component.sass":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".card {\n  background-color: white;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }\n  .card.landing {\n    position: relative;\n    margin-top: 15px;\n    width: 250px;\n    height: auto; }\n    .card.landing .card__info .info__name {\n      margin: 7px 0 7px 10px;\n      font-size: 16px;\n      font-weight: 600; }\n    .card.landing .card__info .info__date {\n      margin: 5px 0 5px 10px;\n      font-size: 10px;\n      color: #999; }\n  .card .card__image {\n    width: 100%;\n    height: auto; }\n  .card .card__info .info__name {\n    margin: 10px 0 10px 10px;\n    font-size: 20px;\n    font-weight: 600; }\n  .card .card__info .info__date {\n    margin: 10px 0 10px 10px;\n    font-size: 12px;\n    color: #999; }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/structure/card/card.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CardComponent; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var CardComponent = (function () {
-    function CardComponent() {
-    }
-    CardComponent.prototype.ngOnInit = function () {
-    };
-    CardComponent = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
-            selector: 'card',
-            template: __webpack_require__("../../../../../src/app/structure/card/card.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/structure/card/card.component.sass")]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], CardComponent);
-    return CardComponent;
-}());
-//# sourceMappingURL=/Users/antonmartyniuk/neshh/src/card.component.js.map
 
 /***/ }),
 

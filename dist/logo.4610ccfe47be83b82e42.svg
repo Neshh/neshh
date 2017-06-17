@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="350px" height="350px" viewBox="0 0 350 350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 6 Copy 2 + Path 6 Copy + Path 6 Mask Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="19.4140625%" y1="-6.58482143%" x2="69.234375%" y2="67.7154018%" id="linearGradient-1">
+            <stop stop-color="#4B449D" offset="0%"></stop>
+            <stop stop-color="#A71F75" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="175" cy="175" r="175"></circle>
+        <linearGradient x1="52.4858408%" y1="9.62927927%" x2="74.2769613%" y2="65.1607326%" id="linearGradient-4">
+            <stop stop-color="#A71F75" offset="0%"></stop>
+            <stop stop-color="#E81B8E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="67.3322329%" y1="46.8609234%" x2="39.4341985%" y2="-12.9786036%" id="linearGradient-5">
+            <stop stop-color="#E03A6B" offset="0%"></stop>
+            <stop stop-color="#FF5E4E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="79.9718007%" y1="76.0477396%" x2="50%" y2="13.619143%" id="linearGradient-6">
+            <stop stop-color="#0A7DD7" offset="0%"></stop>
+            <stop stop-color="#5ECBC9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Path-6-Copy-2-+-Path-6-Copy-+-Path-6-Mask-Copy">
+            <g id="Path-6-Copy-2-+-Path-6-Copy-+-Path-6-Mask">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <path d="M-39.1410838,205.58892 C28.0181717,172.963081 30.2691978,131.384911 70.7120697,131.384911 C111.154942,131.384911 104.882878,139.452391 135.68673,160.061045 C166.490582,180.6697 176.190429,42 245.204479,42 C314.218529,42 347.37346,199.904115 347.37346,199.904115 L347.37346,345.089096 L70.7120697,345.089096 L-61.1520605,345.089096 C-61.1520605,345.089096 -106.300339,238.214758 -39.1410838,205.58892 Z" id="Path-6-Copy-2" fill="url(#linearGradient-4)" mask="url(#mask-3)"></path>
+                <path d="M-27.1410838,240.437953 C40.0181717,207.812115 51.2870296,166.24383 91.7299015,166.24383 C132.172773,166.24383 130.399596,198.039193 159.516761,198.039193 C188.633927,198.039193 178.468167,99 247.482217,99 C316.496268,99 359.37346,234.753148 359.37346,234.753148 L359.37346,379.938129 L82.7120697,379.938129 L-49.1520605,379.938129 C-49.1520605,379.938129 -94.3003393,273.063791 -27.1410838,240.437953 Z" id="Path-6-Copy" fill="url(#linearGradient-5)" mask="url(#mask-3)"></path>
+                <path d="M-7.5390625,295.199219 C25.0963571,260.358778 26.1577404,203.587155 80.1355108,203.587155 C134.113281,203.587155 121.988867,241.185962 173.373963,241.185962 C224.759059,241.185962 207.410285,175 266.074469,175 C324.738653,175 365.740261,281.642002 365.740261,281.642002 L365.740261,426.826983 L89.078871,426.826983 L-42.7852592,426.826983 C-42.7852592,426.826983 -40.1744821,330.03966 -7.5390625,295.199219 Z" id="Path-6" fill="url(#linearGradient-6)" mask="url(#mask-3)"></path>
+                <g id="Group-5-Copy" mask="url(#mask-3)" stroke="#FFFFFF" stroke-width="35">
+                    <g transform="translate(51.000000, 68.000000)">
+                        <path d="M49.9130503,0.846958718 C53.3095161,22.0152424 59.389204,53.9547399 62.4444089,91.4753311 C65.4996138,128.995922 66.8678167,185.992703 65.1606925,199.364987" id="Path-4-Copy"></path>
+                        <path d="M114.802814,9.1149013 C118.19928,30.283185 124.278968,62.2226825 127.334173,99.7432736 C130.389378,137.263865 131.757581,194.260645 130.050456,207.63293" id="Path-4-Copy-4"></path>
+                        <path d="M179.692578,17.3828439 C183.089044,38.5511275 189.168732,70.4906251 192.223937,108.011216 C195.279141,145.531807 196.647344,202.528588 194.94022,215.900873" id="Path-4-Copy-5"></path>
+                        <path d="M0.739792222,107.738214 C34.3219641,100.198416 90.18522,92.6615628 124.574882,90.3518477 C158.964543,88.0421325 203.702146,83.5474778 245.145045,86.3833654" id="Path-5" transform="translate(122.942419, 96.606121) rotate(10.000000) translate(-122.942419, -96.606121) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

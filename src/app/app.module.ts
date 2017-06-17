@@ -11,6 +11,7 @@ import { RegisterComponent } from './forms/register/register.component';
 import { LoginComponent } from './forms/login/login.component';
 import { TabsComponent } from './layout/tabs/tabs.component';
 import { TabComponent } from './layout/tabs/tab/tab.component';
+import { CardComponent } from './structure/card/card.component';
 
 const ROUTES = [
   {
@@ -27,7 +28,8 @@ const ROUTES = [
     RegisterComponent,
     LoginComponent,
     TabsComponent,
-    TabComponent
+    TabComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

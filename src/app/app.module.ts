@@ -30,8 +30,7 @@ const ROUTES = [
     LoginComponent,
     TabsComponent,
     TabComponent,
-    TabComponent,
-    PopupComponent,
+    CardComponent,
     PopupComponent
   ],
   imports: [

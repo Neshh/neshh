@@ -1,7 +1,8 @@
 <div class="landing">
 	<popup [pop-open]="open" *ngIf="this.open == true" (click)="open = false">
-		<app-login></app-login>
+		<login></login>
 	</popup>
+	<button  (click)="openPop()"></button>
 	<div class="landing-container">
 		<div class="contest-container inline">
 			<div class="phone-container">

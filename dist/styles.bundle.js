@@ -1,36 +1,22 @@
-webpackJsonp([2],{
+webpackJsonp([2,4],{
 
-/***/ "../../../../../src/assets/fonts/olivier_demo.ttf":
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "olivier_demo.46270fc4bd1652746fa2.ttf";
-
-/***/ }),
-
-/***/ "../../../../../src/assets/logo.svg":
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "logo.4610ccfe47be83b82e42.svg";
-
-/***/ }),
-
-/***/ "../../../../../src/styles.sass":
+/***/ 386:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../sass-loader/lib/loader.js?{\"sourceMap\":false,\"precision\":8,\"includePaths\":[]}!../../../../../src/styles.sass");
+var content = __webpack_require__(663);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__("../../../../style-loader/addStyles.js")(content, {});
+var update = __webpack_require__(698)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../node_modules/css-loader/index.js??ref--10-1!../node_modules/postcss-loader/index.js??postcss!../node_modules/sass-loader/lib/loader.js??ref--10-3!./styles.sass", function() {
-			var newContent = require("!!../node_modules/css-loader/index.js??ref--10-1!../node_modules/postcss-loader/index.js??postcss!../node_modules/sass-loader/lib/loader.js??ref--10-3!./styles.sass");
+		module.hot.accept("!!../node_modules/css-loader/index.js?{\"sourceMap\":false}!../node_modules/postcss-loader/index.js!../node_modules/sass-loader/index.js!./styles.sass", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js?{\"sourceMap\":false}!../node_modules/postcss-loader/index.js!../node_modules/sass-loader/index.js!./styles.sass");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -41,22 +27,22 @@ if(false) {
 
 /***/ }),
 
-/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../sass-loader/lib/loader.js?{\"sourceMap\":false,\"precision\":8,\"includePaths\":[]}!../../../../../src/styles.sass":
+/***/ 663:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+exports = module.exports = __webpack_require__(664)();
 // imports
 
 
 // module
-exports.push([module.i, ".control-button {\n  height: 35px;\n  width: 100%;\n  border-radius: 3px;\n  color: white;\n  border: none;\n  box-shadow: none;\n  font-weight: 500; }\n\n.form-input {\n  height: 35px;\n  width: 100%;\n  padding: 5px 10px;\n  margin-bottom: 15px;\n  border-radius: 3px;\n  background-color: white;\n  outline: none;\n  border: 1px solid #ddd; }\n\n@font-face {\n  font-family: 'Logo-font';\n  src: url(" + __webpack_require__("../../../../../src/assets/fonts/olivier_demo.ttf") + ") format(\"truetype\"); }\n\nbody {\n  padding: 0;\n  margin: 0;\n  font-family: \"Roboto\"; }\n\nheader {\n  position: absolute;\n  top: 0;\n  left: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  padding: 0 80px;\n  width: 100vw;\n  height: 80px; }\n  header .logo {\n    margin: 15px 0 0 0;\n    width: 50px;\n    height: 50px;\n    background-image: url(" + __webpack_require__("../../../../../src/assets/logo.svg") + ");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center center; }\n  header .buttons-container {\n    margin: 25px 0 0 0; }\n    header .buttons-container .button {\n      padding: 15px 25px;\n      color: #ed495e;\n      font-size: 16px;\n      border-radius: 5px;\n      text-decoration: none; }\n\na {\n  color: black;\n  text-decoration: none;\n  cursor: pointer; }\n\n.inline {\n  display: inline-block;\n  vertical-align: middle; }\n\n* {\n  /* Safari/Chrome, other WebKit */\n  /* Firefox, other Gecko */\n  box-sizing: border-box; }\n", ""]);
+exports.push([module.i, ".control-button {\n  height: 35px;\n  width: 100%;\n  border-radius: 3px;\n  color: white;\n  border: none;\n  box-shadow: none;\n  font-weight: 500; }\n\n.form-input {\n  height: 35px;\n  width: 100%;\n  padding: 5px 10px;\n  margin-bottom: 15px;\n  border-radius: 3px;\n  background-color: white;\n  outline: none;\n  border: 1px solid #ddd; }\n\n@font-face {\n  font-family: 'Logo-font';\n  src: url(" + __webpack_require__(699) + ") format(\"truetype\"); }\n\nbody {\n  padding: 0;\n  margin: 0;\n  font-family: \"Roboto\"; }\n\nheader {\n  position: absolute;\n  top: 0;\n  left: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  padding: 0 80px;\n  width: 100vw;\n  height: 80px; }\n  header .logo {\n    margin: 15px 0 0 0;\n    width: 50px;\n    height: 50px;\n    background-image: url(" + __webpack_require__(665) + ");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center center; }\n  header .buttons-container {\n    margin: 25px 0 0 0; }\n    header .buttons-container .button {\n      padding: 15px 25px;\n      color: #ed495e;\n      font-size: 16px;\n      border-radius: 5px;\n      text-decoration: none; }\n\na {\n  color: black;\n  text-decoration: none;\n  cursor: pointer; }\n\n.inline {\n  display: inline-block;\n  vertical-align: middle; }\n\n* {\n  /* Safari/Chrome, other WebKit */\n  /* Firefox, other Gecko */\n  box-sizing: border-box; }\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ "../../../../css-loader/lib/css-base.js":
+/***/ 664:
 /***/ (function(module, exports) {
 
 /*
@@ -64,19 +50,21 @@ exports.push([module.i, ".control-button {\n  height: 35px;\n  width: 100%;\n  b
 	Author Tobias Koppers @sokra
 */
 // css base code, injected by the css-loader
-module.exports = function(useSourceMap) {
+module.exports = function() {
 	var list = [];
 
 	// return the list of modules as css string
 	list.toString = function toString() {
-		return this.map(function (item) {
-			var content = cssWithMappingToString(item, useSourceMap);
+		var result = [];
+		for(var i = 0; i < this.length; i++) {
+			var item = this[i];
 			if(item[2]) {
-				return "@media " + item[2] + "{" + content + "}";
+				result.push("@media " + item[2] + "{" + item[1] + "}");
 			} else {
-				return content;
+				result.push(item[1]);
 			}
-		}).join("");
+		}
+		return result.join("");
 	};
 
 	// import a list of modules into the list
@@ -108,38 +96,17 @@ module.exports = function(useSourceMap) {
 	return list;
 };
 
-function cssWithMappingToString(item, useSourceMap) {
-	var content = item[1] || '';
-	var cssMapping = item[3];
-	if (!cssMapping) {
-		return content;
-	}
-
-	if (useSourceMap && typeof btoa === 'function') {
-		var sourceMapping = toComment(cssMapping);
-		var sourceURLs = cssMapping.sources.map(function (source) {
-			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
-		});
-
-		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
-	}
-
-	return [content].join('\n');
-}
-
-// Adapted from convert-source-map (MIT)
-function toComment(sourceMap) {
-	// eslint-disable-next-line no-undef
-	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
-	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
-
-	return '/*# ' + data + ' */';
-}
-
 
 /***/ }),
 
-/***/ "../../../../style-loader/addStyles.js":
+/***/ 665:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "logo.svg";
+
+/***/ }),
+
+/***/ 698:
 /***/ (function(module, exports) {
 
 /*
@@ -392,13 +359,20 @@ function updateLink(linkElement, obj) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 699:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("../../../../../src/styles.sass");
+module.exports = __webpack_require__.p + "Milkshake.ttf";
+
+/***/ }),
+
+/***/ 703:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(386);
 
 
 /***/ })
 
-},[2]);
-//# sourceMappingURL=styles.bundle.js.map
+},[703]);
+//# sourceMappingURL=styles.bundle.map

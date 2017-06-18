@@ -2,7 +2,7 @@ import { Component, ContentChildren, QueryList, AfterContentInit } from '@angula
 import { TabComponent } from './tab/tab.component';
 
 @Component({
-  selector: 'app-tabs',
+  selector: 'tabs',
   template:`
     <ul class="nav nav-tabs">
       <li *ngFor="let tab of tabs" (click)="selectTab(tab)" [class.active]="tab.active">

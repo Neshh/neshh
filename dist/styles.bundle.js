@@ -1,9 +1,9 @@
 webpackJsonp([2],{
 
-/***/ "../../../../../src/assets/fonts/olivier_demo.ttf":
+/***/ "../../../../../src/assets/fonts/Milkshake.ttf":
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "olivier_demo.46270fc4bd1652746fa2.ttf";
+module.exports = __webpack_require__.p + "Milkshake.528e3ae3a48dbc4de9dc.ttf";
 
 /***/ }),
 
@@ -49,7 +49,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".control-button {\n  height: 35px;\n  width: 100%;\n  border-radius: 3px;\n  color: white;\n  border: none;\n  box-shadow: none;\n  font-weight: 500; }\n\n.form-input {\n  height: 35px;\n  width: 100%;\n  padding: 5px 10px;\n  margin-bottom: 15px;\n  border-radius: 3px;\n  background-color: white;\n  outline: none;\n  border: 1px solid #ddd; }\n\n@font-face {\n  font-family: 'Logo-font';\n  src: url(" + __webpack_require__("../../../../../src/assets/fonts/olivier_demo.ttf") + ") format(\"truetype\"); }\n\nbody {\n  padding: 0;\n  margin: 0;\n  font-family: \"Roboto\"; }\n\nheader {\n  position: absolute;\n  top: 0;\n  left: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  padding: 0 80px;\n  width: 100vw;\n  height: 80px; }\n  header .logo {\n    margin: 15px 0 0 0;\n    width: 50px;\n    height: 50px;\n    background-image: url(" + __webpack_require__("../../../../../src/assets/logo.svg") + ");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center center; }\n  header .buttons-container {\n    margin: 25px 0 0 0; }\n    header .buttons-container .button {\n      padding: 15px 25px;\n      color: #ed495e;\n      font-size: 16px;\n      border-radius: 5px;\n      text-decoration: none; }\n\na {\n  color: black;\n  text-decoration: none;\n  cursor: pointer; }\n\n.inline {\n  display: inline-block;\n  vertical-align: middle; }\n\n* {\n  /* Safari/Chrome, other WebKit */\n  /* Firefox, other Gecko */\n  box-sizing: border-box; }\n", ""]);
+exports.push([module.i, ".control-button {\n  height: 35px;\n  width: 100%;\n  border-radius: 3px;\n  color: white;\n  border: none;\n  box-shadow: none;\n  font-weight: 500; }\n\n.form-input {\n  height: 35px;\n  width: 100%;\n  padding: 5px 10px;\n  margin-bottom: 15px;\n  border-radius: 3px;\n  background-color: white;\n  outline: none;\n  border: 1px solid #ddd; }\n\n@font-face {\n  font-family: 'Logo-font';\n  src: url(" + __webpack_require__("../../../../../src/assets/fonts/Milkshake.ttf") + ") format(\"truetype\"); }\n\nbody {\n  padding: 0;\n  margin: 0;\n  font-family: \"Roboto\"; }\n\nheader {\n  position: absolute;\n  top: 0;\n  left: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  padding: 0 80px;\n  width: 100vw;\n  height: 80px; }\n  header .logo {\n    margin: 15px 0 0 0;\n    width: 50px;\n    height: 50px;\n    background-image: url(" + __webpack_require__("../../../../../src/assets/logo.svg") + ");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center center; }\n  header .buttons-container {\n    margin: 25px 0 0 0; }\n    header .buttons-container .button {\n      padding: 15px 25px;\n      color: #ed495e;\n      font-size: 16px;\n      border-radius: 5px;\n      text-decoration: none; }\n\na {\n  color: black;\n  text-decoration: none;\n  cursor: pointer; }\n\n.inline {\n  display: inline-block;\n  vertical-align: middle; }\n\n* {\n  /* Safari/Chrome, other WebKit */\n  /* Firefox, other Gecko */\n  box-sizing: border-box; }\n", ""]);
 
 // exports
 

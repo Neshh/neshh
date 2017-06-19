@@ -1,33 +1,32 @@
 <div class="landing">
-	<header>
-		<div class="logo inline"></div>
-		<div class="buttons-container inline">
-			<a class="button" (click)="openPop()">Help</a>
-		</div>
-		<popup [pop-open]="open" *ngIf="this.open == true" (click)="open = false">
-			<app-login></app-login>
-		</popup>
-	</header>
+	<popup [pop-open]="open" *ngIf="this.open == true" (click)="open = false">
+		<login></login>
+	</popup>
 	<div class="landing-container">
 		<div class="contest-container inline">
-			<div class="card-box">
-				<h2 class="label">Hot contests right now</h2>
-				<div class="card"></div>
-				<div class="card"></div>
+			<div class="phone-container">
+				<div class="card-container">
+					<card></card>
+					<card></card>
+				</div>
+				<img class="box-iphone" src="../../assets/landing-iphone.png">
 			</div>
 		</div>
 		<div class="form-container inline">
 			<div class="container__box">
-				<h1 class="form-container__headname">Neshh</h1>
-				<h2 class="form-container__subname">Laborum coniunctione est vidisse, occaecat comprehenderit qui pariatur</h2>
-				<app-tabs>
-					<app-tab [tabTitle]="'Sign up'">
-						<app-register></app-register>
-					</app-tab>
-					<app-tab tabTitle="Log in">
-						<app-login></app-login>
-					</app-tab>
-				</app-tabs>
+				<div class="box__headname">
+					<div class="logo inline"></div>
+					<h1 class="name inline">Neshh</h1>
+				</div>
+				<h2 class="box__subname">Laborum coniunctione est vidisse, occaecat comprehenderit qui pariatur</h2>
+				<tabs>
+					<tab [tabTitle]="'Sign up'">
+						<register></register>
+					</tab>
+					<tab tabTitle="Log in">
+						<login></login>
+					</tab>
+				</tabs>
 				<footer>
 					<span class="copy inline">© Neshh</span>
 					<div class="links-container inline">

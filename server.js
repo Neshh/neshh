@@ -4,6 +4,13 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
+// var SystemJS = require('systemjs');
+//
+// // loads './app.js' from the current directory
+// SystemJS.import('./app.js').then(function (m) {
+//   console.log(m);
+// });
+
 app.use(express.static(__dirname + '/dist'));
 
 app.get('*', (req, res) => {

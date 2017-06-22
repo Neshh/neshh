@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { Angular2SocialLoginModule } from "angular2-social-login";
+import { MasonryModule } from 'angular2-masonry';
 
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
@@ -52,6 +53,7 @@ let providers = {
     FormsModule,
     HttpModule,
     Angular2SocialLoginModule,
+    MasonryModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [],

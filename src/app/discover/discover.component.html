@@ -1,3 +1,18 @@
 <div class="discover">
-  <sidebar></sidebar>
+	<sidebar></sidebar>
+	<div class="discover-container">
+		<div class="header">
+			<h1 class="header__title">Discover</h1>
+		</div>
+		<masonry [options]="{
+			fitWidth: true,
+			columnWidth: '.brick',
+			gutter: 10,
+			horizontalOrder: true
+		}">
+			<masonry-brick class="brick" *ngFor="let brick of bricks">
+				<card></card>
+			</masonry-brick>
+		</masonry>
+	</div>
 </div>

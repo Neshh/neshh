@@ -14,3 +14,7 @@ dist/vendor.bundle.js.map
 dist/main.bundle.js.map
 
 dist/polyfills.bundle.js.map
+
+dist/vendor.bundle.js.map
+
+*.map

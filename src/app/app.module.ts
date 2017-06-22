@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { Angular2SocialLoginModule } from "angular2-social-login";
+import { MasonryModule } from 'angular2-masonry';
 
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
@@ -14,11 +15,16 @@ import { TabsComponent } from './layout/tabs/tabs.component';
 import { TabComponent } from './layout/tabs/tab/tab.component';
 import { CardComponent } from './structure/card/card.component';
 import { PopupComponent } from './layout/popup/popup.component';
+import { DiscoverComponent } from './discover/discover.component';
 
 const ROUTES = [
   {
     path: '',
     component: LandingComponent
+  },
+  {
+    path: 'discover',
+    component: DiscoverComponent
   }
 ];
 
@@ -39,13 +45,15 @@ let providers = {
     TabsComponent,
     TabComponent,
     CardComponent,
-    PopupComponent
+    PopupComponent,
+    DiscoverComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     Angular2SocialLoginModule,
+    MasonryModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [],

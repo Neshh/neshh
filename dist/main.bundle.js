@@ -91,6 +91,7 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__layout_tabs_tab_tab_component__ = __webpack_require__("../../../../../src/app/layout/tabs/tab/tab.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__structure_card_card_component__ = __webpack_require__("../../../../../src/app/structure/card/card.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__layout_popup_popup_component__ = __webpack_require__("../../../../../src/app/layout/popup/popup.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__discover_discover_component__ = __webpack_require__("../../../../../src/app/discover/discover.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -116,10 +117,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var ROUTES = [
     {
         path: '',
         component: __WEBPACK_IMPORTED_MODULE_7__landing_landing_component__["a" /* LandingComponent */]
+    },
+    {
+        path: 'discover',
+        component: __WEBPACK_IMPORTED_MODULE_15__discover_discover_component__["a" /* DiscoverComponent */]
     }
 ];
 var providers = {
@@ -142,7 +148,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_11__layout_tabs_tabs_component__["a" /* TabsComponent */],
                 __WEBPACK_IMPORTED_MODULE_12__layout_tabs_tab_tab_component__["a" /* TabComponent */],
                 __WEBPACK_IMPORTED_MODULE_13__structure_card_card_component__["a" /* CardComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__layout_popup_popup_component__["a" /* PopupComponent */]
+                __WEBPACK_IMPORTED_MODULE_14__layout_popup_popup_component__["a" /* PopupComponent */],
+                __WEBPACK_IMPORTED_MODULE_15__discover_discover_component__["a" /* DiscoverComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -160,6 +167,66 @@ var AppModule = (function () {
 }());
 __WEBPACK_IMPORTED_MODULE_5_angular2_social_login__["a" /* Angular2SocialLoginModule */].loadProvidersScripts(providers);
 //# sourceMappingURL=/Users/antonmartyniuk/neshh/src/app.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/discover/discover.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"discover\">\n  <sidebar></sidebar>\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/discover/discover.component.sass":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/discover/discover.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/index.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DiscoverComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var DiscoverComponent = (function () {
+    function DiscoverComponent() {
+    }
+    DiscoverComponent.prototype.ngOnInit = function () {
+    };
+    DiscoverComponent = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
+            selector: 'discover',
+            template: __webpack_require__("../../../../../src/app/discover/discover.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/discover/discover.component.sass")]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], DiscoverComponent);
+    return DiscoverComponent;
+}());
+//# sourceMappingURL=/Users/antonmartyniuk/neshh/src/discover.component.js.map
 
 /***/ }),
 
@@ -226,7 +293,7 @@ var LoginComponent = (function () {
 /***/ "../../../../../src/app/forms/register/register.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<form>\n\t<button class=\"control-button facebook\" (click)=\"signIn('facebook')\"><i class=\"fa fa-facebook-square\" aria-hidden=\"true\"></i>&nbsp;&nbsp;Log in with Facebook </button>\n\t<div class=\"seperator\">\n\t\t<div class=\"line inline\"></div>\n\t\t<span class=\"or\">OR</span>\n\t\t<div class=\"line inline\"></div>\n\t</div>\n\t<input class=\"form-input email\" placeholder=\"Email\" type=\"email\">\n\t<input class=\"form-input name\" placeholder=\"Full Name\" type=\"text\">\n\t<input class=\"form-input password\" placeholder=\"Password\" type=\"password\">\n\t<input class=\"form-input re-password\" placeholder=\"Re-enter Password\" type=\"password\">\n\t<button class=\"control-button signup\">Sign up</button>\n\t<p class=\"terms\">By signing up, you agree to our Terms & Privacy Policy.</p>\n</form>\n"
+module.exports = "<form>\n\t<button class=\"control-button facebook\" (click)=\"signIn('facebook')\"><i class=\"fa fa-facebook-square\" aria-hidden=\"true\"></i>&nbsp;&nbsp;Log in with Facebook </button>\n\t<div class=\"seperator\">\n\t\t<div class=\"line inline\"></div>\n\t\t<span class=\"or\">OR</span>\n\t\t<div class=\"line inline\"></div>\n\t</div>\n\t<input class=\"form-input email\" placeholder=\"Email\" type=\"email\">\n\t<input class=\"form-input name\" placeholder=\"Full Name\" type=\"text\">\n\t<input class=\"form-input password\" placeholder=\"Password\" type=\"password\">\n\t<input class=\"form-input re-password\" placeholder=\"Re-enter Password\" type=\"password\">\n\t<button routerLink=\"/discover\" class=\"control-button signup\">Sign up</button>\n\t<p class=\"terms\">By signing up, you agree to our Terms & Privacy Policy.</p>\n</form>\n"
 
 /***/ }),
 
@@ -642,7 +709,7 @@ var CardComponent = (function () {
 /***/ "../../../../../src/app/structure/sidebar/sidebar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  sidebar works!\n</p>\n"
+module.exports = "<div class=\"sidebar\">\n\t<div class=\"sidebar__logo inline\"></div>\n\t<div class=\"sidebar__user-dropdown inline\">\n\t\t<p class=\"name inline\">John</p>\n\t\t<img class=\"photo\">\n\t\t<i class=\"fa fa-caret-down\" aria-hidden=\"true\"></i>\n\t</div>\n\t<div class=\"sidebar__user-data\">\n\t\t<div class=\"data-box\">\n\t\t\t<p class=\"data-box__value\">220$</p>\n\t\t\t<p class=\"data-box__label\">Budget</p>\n\t\t</div>\n\t\t<div class=\"data-box\">\n\t\t\t<p class=\"data-box__value\">5</p>\n\t\t\t<p class=\"data-box__label\">Contests</p>\n\t\t</div>\n\t\t<div class=\"data-box\">\n\t\t\t<p class=\"data-box__value\">8</p>\n\t\t\t<p class=\"data-box__label\">Wishes</p>\n\t\t</div>\n\t</div>\n\t<a class=\"sidebar__link sidebar__link--discover\">Discover</a>\n\t<a class=\"sidebar__link sidebar__link--weekly\">\n\t\tWeekly deal\n\t\t<span class=\"new\">New!</span>\n\t</a>\n\t<a class=\"sidebar__link sidebar__link--suggest\">Suggest contest</a>\n\t<a class=\"sidebar__link sidebar__link--settings\">Settings</a>\n\t<div class=\"sidebar__footer\">\n\t\t<span class=\"copy inline\">© Neshh</span>\n\t\t<div class=\"links-container inline\">\n\t\t\t<a class=\"facebook\" href=\"facebook\" target=\"_blank\"><i class=\"fa fa-facebook-square\" aria-hidden=\"true\"></i></a>\n\t\t\t<a class=\"instagram\" href=\"\" target=\"_blank\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a>\n\t\t\t<a class=\"vk\" href=\"https://vk.com/neshhcom\" target=\"_blank\"><i class=\"fa fa-vk\" aria-hidden=\"true\"></i></a>\n\t\t</div>\n\t</div>\n</div>"
 
 /***/ }),
 
@@ -654,7 +721,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".sidebar {\n  position: relative;\n  width: 270px;\n  height: 100vh;\n  min-height: 570px;\n  padding: 25px 0;\n  background-color: white;\n  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);\n  background-image: url(" + __webpack_require__("../../../../../src/assets/sidebar-background.svg") + ");\n  background-size: 300px 270px;\n  background-position: -15px calc(100% + 30px);\n  background-repeat: no-repeat; }\n  .sidebar__logo {\n    margin: 0 0 0 15px;\n    width: 37px;\n    height: 37px;\n    background-image: url(" + __webpack_require__("../../../../../src/assets/logo.svg") + ");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center center; }\n  .sidebar__user-dropdown {\n    margin: 5px 10px 0 0;\n    float: right; }\n    .sidebar__user-dropdown .name {\n      margin: 0 3px;\n      font-weight: 600;\n      font-size: 14px; }\n    .sidebar__user-dropdown .photo {\n      margin: 0 3px;\n      width: 26px;\n      height: 26px;\n      border-radius: 50%;\n      background-color: #ccc; }\n    .sidebar__user-dropdown i {\n      margin: 0 3px;\n      color: #999; }\n  .sidebar__user-data {\n    margin: 25px 0 50px 0;\n    padding: 3px 5px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    background-color: #f6f6f6; }\n    .sidebar__user-data .data-box {\n      -webkit-box-flex: 1;\n          -ms-flex-positive: 1;\n              flex-grow: 1;\n      text-align: center; }\n      .sidebar__user-data .data-box__value {\n        font-size: 17px;\n        font-weight: 600;\n        margin: 2px 0 0 0; }\n      .sidebar__user-data .data-box__label {\n        font-size: 10px;\n        color: #999;\n        margin: 0 0 2px 0; }\n  .sidebar__link {\n    display: block;\n    margin: 0 auto;\n    margin-top: 35px;\n    margin-bottom: 35px;\n    text-align: center;\n    font-size: 16px;\n    font-weight: 600; }\n    .sidebar__link .new {\n      position: relative;\n      top: -2px;\n      left: 1px;\n      padding: 4px;\n      background-color: #ed495e;\n      color: white;\n      font-size: 10px;\n      border-radius: 5px; }\n    .sidebar__link--weekly {\n      padding: 0 0 0 34px; }\n  .sidebar__footer {\n    position: absolute;\n    bottom: 10px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    padding: 0 15px;\n    -webkit-box-pack: justify;\n        -ms-flex-pack: justify;\n            justify-content: space-between;\n    width: 100%;\n    color: white; }\n    .sidebar__footer .copy {\n      font-size: 13px;\n      margin-top: 2px; }\n    .sidebar__footer a {\n      color: white;\n      font-size: 15px;\n      margin: -3px 5px 0 5px; }\n", ""]);
 
 // exports
 
@@ -703,6 +770,13 @@ var SidebarComponent = (function () {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "logo.4610ccfe47be83b82e42.svg";
+
+/***/ }),
+
+/***/ "../../../../../src/assets/sidebar-background.svg":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "sidebar-background.19bfae4706b2faf2c82c.svg";
 
 /***/ }),
 

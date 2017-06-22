@@ -1,0 +1,88 @@
+@import ../../../variables
+	
+.sidebar
+	position: relative
+	width: 270px
+	height: 100vh
+	min-height: 570px
+	padding: 25px 0
+	background-color: white
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+	background-image: url(../../../assets/sidebar-background.svg)
+	background-size: 300px 270px
+	background-position: -15px calc(100% + 30px)
+	background-repeat: no-repeat
+	&__logo
+		margin: 0 0 0 15px
+		width: 37px
+		height: 37px
+		background-image: url(../../../assets/logo.svg)
+		background-size: contain
+		background-repeat: no-repeat
+		background-position: center center
+	&__user-dropdown
+		margin: 5px 10px 0 0
+		float: right
+		.name
+			margin: 0 3px
+			font-weight: 600
+			font-size: 14px
+		.photo
+			margin: 0 3px
+			width: 26px
+			height: 26px
+			border-radius: 50%
+			background-color: $color-light-gray
+		i
+			margin: 0 3px
+			color: $color-gray
+	&__user-data
+		margin: 25px 0 50px 0
+		padding: 3px 5px
+		display: flex
+		background-color: $color-extra-light-gray
+		.data-box
+			flex-grow: 1
+			text-align: center
+			&__value
+				font-size: 17px
+				font-weight: 600
+				margin: 2px 0 0 0
+			&__label
+				font-size: 10px
+				color: $color-gray
+				margin: 0 0 2px 0
+	&__link
+		display: block
+		margin: 0 auto
+		margin-top: 35px
+		margin-bottom: 35px
+		text-align: center
+		font-size: 16px
+		font-weight: 600
+		.new
+			position: relative
+			top: -2px
+			left: 1px
+			padding: 4px
+			background-color: $color-red
+			color: white
+			font-size: 10px
+			border-radius: 5px
+		&--weekly
+			padding: 0 0 0 34px
+	&__footer
+		position: absolute
+		bottom: 10px
+		display: flex
+		padding: 0 15px
+		justify-content: space-between;
+		width: 100%
+		color: white
+		.copy
+			font-size: 13px
+			margin-top: 2px
+		a
+			color: white
+			font-size: 15px
+			margin: -3px 5px 0 5px

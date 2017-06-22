@@ -14,11 +14,16 @@ import { TabsComponent } from './layout/tabs/tabs.component';
 import { TabComponent } from './layout/tabs/tab/tab.component';
 import { CardComponent } from './structure/card/card.component';
 import { PopupComponent } from './layout/popup/popup.component';
+import { DiscoverComponent } from './discover/discover.component';
 
 const ROUTES = [
   {
     path: '',
     component: LandingComponent
+  },
+  {
+    path: 'discover',
+    component: DiscoverComponent
   }
 ];
 
@@ -39,7 +44,8 @@ let providers = {
     TabsComponent,
     TabComponent,
     CardComponent,
-    PopupComponent
+    PopupComponent,
+    DiscoverComponent
   ],
   imports: [
     BrowserModule,

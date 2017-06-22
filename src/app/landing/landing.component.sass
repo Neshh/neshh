@@ -5,6 +5,7 @@
 	height: 100vh
 	width: 100vw
 	min-height: 800px;
+	background-color: #fcfcfc
 	.landing-container
 		width: 920px
 		height: 100%
@@ -15,23 +16,25 @@
 			z-index: 10
 			height: 100%
 			width: 49.5%
-			.card-box
+			.phone-container
 				position: absolute
-				display: block
-				top: 50%
-				transform: translateY(-50%)
-				margin: 0 auto
-				width: 320px
-				.label
-					color: $color-red
-					font-size: 14px
-					font-weight: 500
-				.card
-					margin-top: 20px
-					width: 300px
-					height: 240px
-					background-color: white
-					box-shadow: $shadow-card
+				left: 50%
+				top: calc(50% - 325px)
+				transform: translateX(-50%)
+				height: 650px
+				width: 322px
+				.card-container
+					position: relative
+					z-index: 50
+					top: 175px
+					left: 39px
+				.box-iphone
+					position: absolute
+					top: 0
+					left: 0
+					width: auto
+					height: calc(100% + 20px)
+					z-index: 40
 		.form-container
 			position: relative
 			z-index: 10
@@ -40,25 +43,33 @@
 			.container__box
 				position: absolute
 				top: 50%
+				left: calc(50% - 175px)
 				transform: translateY(-50%)
-				display: block
-				margin: 0 auto
 				padding: 5px 15px
 				width: 350px
 				min-height: 650px
 				background-color: white
 				box-shadow: $shadow-card
-				.form-container__headname
-					font-family: 'Logo-font'
-					font-size: 42px
+				.box__headname
 					text-align: center
-					margin-bottom: 5px
-				.form-container__subname
+					margin-bottom: 2px
+					.logo
+						margin: 2px 7px 0 0
+						width: 40px
+						height: 40px
+						background-image: url(../../assets/logo.svg)
+						background-size: contain
+						background-repeat: no-repeat
+						background-position: center center
+					.name
+						font-size: 36px
+						font-family: 'Logo-font'
+				.box__subname
 					font-size: 15px
 					color: $color-gray
 					line-height: 20px
 					margin-top: 0px
-					margin-bottom: 15px
+					margin-bottom: 20px
 					text-align: center
 				footer
 					position: absolute

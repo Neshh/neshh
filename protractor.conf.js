@@ -14,6 +14,9 @@ exports.config = {
   },
   directConnect: true,
   baseUrl: 'http://localhost:4200/',
+  map: {
+      'ng2-bs3-modal': 'node_modules/ng2-bs3-modal'
+  },
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,

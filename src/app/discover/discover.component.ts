@@ -44,7 +44,14 @@ export class DiscoverComponent implements OnInit {
      {title: 'Brick 6'}
    ]
 
+  
+  selectedValue: string;
 
+  sorts = [
+    {value: 'today', viewValue: 'Today'},
+    {value: 'high', viewValue: 'Budget (high)'},
+    {value: 'low', viewValue: 'Budget (low)'}
+  ];
 
   ngOnInit() {
   }

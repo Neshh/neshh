@@ -18,7 +18,8 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "styles.sass"
+        "styles.sass",
+        "neshh-theme.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

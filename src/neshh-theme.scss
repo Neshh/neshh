@@ -1,0 +1,12 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$neshh-app-primary: mat-palette($mat-red, 600);       // Brown  <-- CUSTOM COLOR HERE!
+$neshh-app-accent:  mat-palette($mat-red, 400);      // Green  <-- CUSTOM COLOR HERE!
+
+$neshh-app-warn:    mat-palette($mat-red, 500); // Orange <-- CUSTOM COLOR HERE!
+
+$neshh-app-theme: mat-light-theme($neshh-app-primary, $neshh-app-accent, $neshh-app-warn);
+
+@include angular-material-theme($neshh-app-theme);

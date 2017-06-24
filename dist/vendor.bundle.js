@@ -24,7 +24,7 @@ var MASONRY_DIRECTIVES = [
     __WEBPACK_IMPORTED_MODULE_0__src_masonry__["a" /* AngularMasonry */],
     __WEBPACK_IMPORTED_MODULE_1__src_brick__["a" /* AngularMasonryBrick */]
 ];
-//# sourceMappingURL=/Users/antonmartyniuk/neshh/src/index.js.map
+//# sourceMappingURL=/Users/glebkozenko/git/neshh/src/index.js.map
 
 /***/ }),
 
@@ -88,14 +88,14 @@ var AngularMasonryBrick = (function () {
     return AngularMasonryBrick;
     var _a, _b;
 }());
-//# sourceMappingURL=/Users/antonmartyniuk/neshh/src/brick.js.map
+//# sourceMappingURL=/Users/glebkozenko/git/neshh/src/brick.js.map
 
 /***/ }),
 
 /***/ "../../../../angular2-masonry/src/masonry-options.ts":
 /***/ (function(module, exports) {
 
-//# sourceMappingURL=/Users/antonmartyniuk/neshh/src/masonry-options.js.map
+//# sourceMappingURL=/Users/glebkozenko/git/neshh/src/masonry-options.js.map
 
 /***/ }),
 
@@ -229,7 +229,7 @@ var AngularMasonry = (function () {
     return AngularMasonry;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=/Users/antonmartyniuk/neshh/src/masonry.js.map
+//# sourceMappingURL=/Users/glebkozenko/git/neshh/src/masonry.js.map
 
 /***/ }),
 
@@ -266,7 +266,7 @@ var MasonryModule = (function () {
     ], MasonryModule);
     return MasonryModule;
 }());
-//# sourceMappingURL=/Users/antonmartyniuk/neshh/src/module.js.map
+//# sourceMappingURL=/Users/glebkozenko/git/neshh/src/module.js.map
 
 /***/ }),
 

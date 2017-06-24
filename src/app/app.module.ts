@@ -5,6 +5,9 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { Angular2SocialLoginModule } from "angular2-social-login";
 import { MasonryModule } from 'angular2-masonry';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MdButtonModule, MdCheckboxModule, MdMenuModule, MdSliderModule } from '@angular/material';
+import 'hammerjs';
 
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
@@ -54,6 +57,11 @@ let providers = {
     HttpModule,
     Angular2SocialLoginModule,
     MasonryModule,
+    BrowserAnimationsModule,
+    MdButtonModule,
+    MdCheckboxModule,
+    MdMenuModule,
+    MdSliderModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [],

@@ -73534,7 +73534,7 @@ var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* Version */]
 /* unused harmony export MdSidenavToggleResult */
 /* unused harmony export MdSidenav */
 /* unused harmony export MdSidenavContainer */
-/* unused harmony export MdSliderModule */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return MdSliderModule; });
 /* unused harmony export MD_SLIDER_VALUE_ACCESSOR */
 /* unused harmony export MdSliderChange */
 /* unused harmony export MdSliderBase */

@@ -166,6 +166,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_8__angular_material__["a" /* MdButtonModule */],
             __WEBPACK_IMPORTED_MODULE_8__angular_material__["b" /* MdCheckboxModule */],
             __WEBPACK_IMPORTED_MODULE_8__angular_material__["c" /* MdMenuModule */],
+            __WEBPACK_IMPORTED_MODULE_8__angular_material__["d" /* MdSliderModule */],
             __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* RouterModule */].forRoot(ROUTES)
         ],
         providers: [],

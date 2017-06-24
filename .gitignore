@@ -18,3 +18,9 @@ dist/polyfills.bundle.js.map
 dist/vendor.bundle.js.map
 
 *.map
+
+dist/main.bundle.js
+
+dist/styles.bundle.js.map
+
+dist/main.bundle.js

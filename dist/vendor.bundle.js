@@ -24,7 +24,7 @@ var MASONRY_DIRECTIVES = [
     __WEBPACK_IMPORTED_MODULE_0__src_masonry__["a" /* AngularMasonry */],
     __WEBPACK_IMPORTED_MODULE_1__src_brick__["a" /* AngularMasonryBrick */]
 ];
-//# sourceMappingURL=/Users/glebkozenko/neshh/src/index.js.map
+//# sourceMappingURL=/Users/antonmartyniuk/neshh/src/index.js.map
 
 /***/ }),
 
@@ -89,14 +89,14 @@ AngularMasonryBrick = __decorate([
 ], AngularMasonryBrick);
 
 var _a, _b;
-//# sourceMappingURL=/Users/glebkozenko/neshh/src/brick.js.map
+//# sourceMappingURL=/Users/antonmartyniuk/neshh/src/brick.js.map
 
 /***/ }),
 
 /***/ "../../../../angular2-masonry/src/masonry-options.ts":
 /***/ (function(module, exports) {
 
-//# sourceMappingURL=/Users/glebkozenko/neshh/src/masonry-options.js.map
+//# sourceMappingURL=/Users/antonmartyniuk/neshh/src/masonry-options.js.map
 
 /***/ }),
 
@@ -231,7 +231,7 @@ AngularMasonry = __decorate([
 ], AngularMasonry);
 
 var _a, _b, _c, _d;
-//# sourceMappingURL=/Users/glebkozenko/neshh/src/masonry.js.map
+//# sourceMappingURL=/Users/antonmartyniuk/neshh/src/masonry.js.map
 
 /***/ }),
 
@@ -265,7 +265,7 @@ MasonryModule = __decorate([
     })
 ], MasonryModule);
 
-//# sourceMappingURL=/Users/glebkozenko/neshh/src/module.js.map
+//# sourceMappingURL=/Users/antonmartyniuk/neshh/src/module.js.map
 
 /***/ }),
 

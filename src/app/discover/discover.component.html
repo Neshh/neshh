@@ -5,56 +5,12 @@
 		</div>
 		<masonry 
 			[options]="{
-				itemSelector: '.card',
+				itemSelector: 'masonry-brick',
 				columnWidth: 275
 			}"
 			[useImagesLoaded]="true"
 		>
-			<masonry-brick class="card card--large">
-				<div class="card-container">
-					<img class="card__image" src="../../../assets/example.jpg">
-					<div class="card__info inline">
-						<h2 class="info__name">Apple AirPords</h2>
-						<p class="info__date">03.06.2017</p>
-					</div>
-					<div class="card__budjet inline">
-					</div>
-				</div>
-			</masonry-brick>
-			<masonry-brick class="card card--large">
-				<div class="card-container">
-					<img class="card__image" src="../../../assets/example.jpg">
-					<div class="card__info inline">
-						<h2 class="info__name">Apple AirPords</h2>
-						<p class="info__date">03.06.2017</p>
-					</div>
-					<div class="card__budjet inline">
-					</div>
-				</div>
-			</masonry-brick>
-			<masonry-brick class="card card--medium">
-				<div class="card-container">
-					<img class="card__image" src="../../../assets/example.jpg">
-					<div class="card__info inline">
-						<h2 class="info__name">Apple AirPords</h2>
-						<p class="info__date">03.06.2017</p>
-					</div>
-					<div class="card__budjet inline">
-					</div>
-				</div>
-			</masonry-brick>
-			<masonry-brick class="card card--medium">
-				<div class="card-container">
-					<img class="card__image" src="../../../assets/example.jpg">
-					<div class="card__info inline">
-						<h2 class="info__name">Apple AirPords</h2>
-						<p class="info__date">03.06.2017</p>
-					</div>
-					<div class="card__budjet inline">
-					</div>
-				</div>
-			</masonry-brick>
-			<masonry-brick class="card card--medium">
+			<masonry-brick class="card card--medium" *ngFor="let brick of bricks">
 				<div class="card-container">
 					<img class="card__image" src="../../../assets/example.jpg">
 					<div class="card__info inline">

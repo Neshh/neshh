@@ -16,26 +16,46 @@
 		.card
 			display: inline-block
 			position: relative
-			padding: 0 10px
-			margin-bottom: 20px
+			width: 275px
+			height: 187px
+			padding: 0 15px
+			margin-bottom: 30px
 			.card-container
 				background-color: white
 				box-shadow: $shadow-card
 				.card__image
 					width: 100%
 					height: auto
-			&--medium
-				width: 275px
-				height: 187px
-				.card-container
-					.card__info
+				.card__info
 						.info__name
 							margin: 7px 0 7px 10px
 							font-size: 16px
 						.info__date
 							margin: 7px 0 7px 10px
 							font-size: 10px
-			&--large
+			&:nth-child(5)
+				width: 550px
+				height: 366px
+				.card-container
+					.card__info
+						.info__name
+							margin: 15px 0 7px 10px
+							font-size: 26px
+						.info__date
+							margin: 7px 0 15px 10px
+							font-size: 14px
+			&:nth-child(1)
+				width: 550px
+				height: 366px
+				.card-container
+					.card__info
+						.info__name
+							margin: 15px 0 7px 10px
+							font-size: 26px
+						.info__date
+							margin: 7px 0 15px 10px
+							font-size: 14px
+			&:nth-child(9)
 				width: 550px
 				height: 366px
 				.card-container

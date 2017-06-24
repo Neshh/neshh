@@ -1,17 +1,25 @@
-<div class="discover">
-	<sidebar></sidebar>
-	<div class="discover-container">
+<div class="view-container">
+	<div class="discover">
 		<div class="header">
 			<h1 class="header__title">Discover</h1>
 		</div>
-		<masonry [options]="{
-			fitWidth: true,
-			columnWidth: '.brick',
-			gutter: 10,
-			horizontalOrder: true
-		}">
-			<masonry-brick class="brick" *ngFor="let brick of bricks">
-				<card></card>
+		<masonry 
+			[options]="{
+				itemSelector: 'masonry-brick',
+				columnWidth: 275
+			}"
+			[useImagesLoaded]="true"
+		>
+			<masonry-brick class="card card--medium" *ngFor="let brick of bricks">
+				<div class="card-container">
+					<img class="card__image" src="../../../assets/example.jpg">
+					<div class="card__info inline">
+						<h2 class="info__name">Apple AirPords</h2>
+						<p class="info__date">03.06.2017</p>
+					</div>
+					<div class="card__budjet inline">
+					</div>
+				</div>
 			</masonry-brick>
 		</masonry>
 	</div>

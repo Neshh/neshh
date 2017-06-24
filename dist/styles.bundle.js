@@ -1,5 +1,12 @@
 webpackJsonp([2],{
 
+/***/ "../../../../../src/assets/container-background.svg":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "container-background.609635e630ed3a8bebaa.svg";
+
+/***/ }),
+
 /***/ "../../../../../src/assets/fonts/Milkshake.ttf":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -49,7 +56,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".control-button {\n  height: 35px;\n  width: 100%;\n  border-radius: 3px;\n  color: white;\n  border: none;\n  box-shadow: none;\n  font-weight: 500; }\n\n.form-input {\n  height: 35px;\n  width: 100%;\n  padding: 5px 10px;\n  margin-bottom: 15px;\n  border-radius: 3px;\n  background-color: white;\n  outline: none;\n  border: 1px solid #ddd; }\n\n@font-face {\n  font-family: 'Logo-font';\n  src: url(" + __webpack_require__("../../../../../src/assets/fonts/Milkshake.ttf") + ") format(\"truetype\"); }\n\nbody {\n  padding: 0;\n  margin: 0;\n  font-family: \"Roboto\"; }\n\nheader {\n  position: absolute;\n  top: 0;\n  left: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  padding: 0 80px;\n  width: 100vw;\n  height: 80px; }\n  header .logo {\n    margin: 15px 0 0 0;\n    width: 50px;\n    height: 50px;\n    background-image: url(" + __webpack_require__("../../../../../src/assets/logo.svg") + ");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center center; }\n  header .buttons-container {\n    margin: 25px 0 0 0; }\n    header .buttons-container .button {\n      padding: 15px 25px;\n      color: #ed495e;\n      font-size: 16px;\n      border-radius: 5px;\n      text-decoration: none; }\n\na {\n  color: black;\n  text-decoration: none !important;\n  cursor: pointer; }\n  a:hover {\n    color: black; }\n\n.inline {\n  display: inline-block;\n  vertical-align: middle; }\n\n* {\n  /* Safari/Chrome, other WebKit */\n  /* Firefox, other Gecko */\n  box-sizing: border-box; }\n", ""]);
+exports.push([module.i, ".control-button {\n  height: 35px;\n  width: 100%;\n  border-radius: 3px;\n  color: white;\n  border: none;\n  box-shadow: none;\n  font-weight: 500; }\n\n.form-input {\n  height: 35px;\n  width: 100%;\n  padding: 5px 10px;\n  margin-bottom: 15px;\n  border-radius: 3px;\n  background-color: white;\n  outline: none;\n  border: 1px solid #ddd; }\n\n@font-face {\n  font-family: 'Logo-font';\n  src: url(" + __webpack_require__("../../../../../src/assets/fonts/Milkshake.ttf") + ") format(\"truetype\"); }\n\nbody {\n  padding: 0;\n  margin: 0;\n  font-family: \"Roboto\";\n  background-color: #f9f9f9; }\n\nheader {\n  position: absolute;\n  top: 0;\n  left: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  padding: 0 80px;\n  width: 100vw;\n  height: 80px; }\n  header .logo {\n    margin: 15px 0 0 0;\n    width: 50px;\n    height: 50px;\n    background-image: url(" + __webpack_require__("../../../../../src/assets/logo.svg") + ");\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center center; }\n  header .buttons-container {\n    margin: 25px 0 0 0; }\n    header .buttons-container .button {\n      padding: 15px 25px;\n      color: #ed495e;\n      font-size: 16px;\n      border-radius: 5px;\n      text-decoration: none; }\n\na {\n  color: black;\n  text-decoration: none !important;\n  cursor: pointer; }\n  a:hover {\n    color: black; }\n\n.inline {\n  display: inline-block;\n  vertical-align: middle; }\n\n.view-container {\n  position: relative;\n  left: 270px;\n  width: calc(100vw - 270px);\n  min-height: 570px;\n  background-image: url(" + __webpack_require__("../../../../../src/assets/container-background.svg") + ");\n  background-position: top right;\n  background-repeat: no-repeat;\n  background-size: 60vw auto; }\n\n* {\n  /* Safari/Chrome, other WebKit */\n  /* Firefox, other Gecko */\n  box-sizing: border-box; }\n", ""]);
 
 // exports
 
